@@ -55,7 +55,7 @@
         <module>spring-boot-thymeleaf</module>
         <module>spring-lifecycle</module>
         <module>spring-boot-restful</module>
-        <module>sprint-boot-jdbc</module>
+        <module>spring-boot-jdbc</module>
         <module>spring-boot-mybatis</module>
         <module>spring-boot-jpa</module>
     </modules>
