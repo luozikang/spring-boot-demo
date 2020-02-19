@@ -1,0 +1,51 @@
+lzk:
+  title: 纯洁的微笑
+  description: 分享技术，品味生活
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      resolve-lazily: false
+      enabled: true
+  thymeleaf:
+    cache: false
+server:
+  port: 8080
+  tomcat: #配置tomcat文件上传大小限制
+    max-swallow-size: -1
+
+## fileupload Config
+#  spring.servlet.multipart.enabled=true，是否支持 multipart 上传文件
+#  spring.servlet.multipart.file-size-threshold=0，支持文件写入磁盘
+#  spring.servlet.multipart.location=，上传文件的临时目录
+#  spring.servlet.multipart.max-file-size=10Mb，最大支持文件大小
+#  spring.servlet.multipart.max-request-sizee=10Mb，最大支持请求大小
+#  spring.servlet.multipart.resolve-lazily=false，是否支持 multipart 上传文件时懒加载
+
+## thymeleaf (ThymeleafAutoConfiguration)
+#开启模板缓存（默认值：true）
+#  spring.thymeleaf.cache=true
+#  #检查模板是否存在，然后再呈现
+#  spring.thymeleaf.check-template=true
+#  #检查模板位置是否正确（默认值:true）
+#  spring.thymeleaf.check-template-location=true
+#  #Content-Type的值（默认值：text/html）
+#  spring.thymeleaf.content-type=text/html
+#  #开启MVC Thymeleaf视图解析（默认值：true）
+#  spring.thymeleaf.enabled=true
+#  #模板编码
+#  spring.thymeleaf.encoding=UTF-8
+#  #要被排除在解析之外的视图名称列表，用逗号分隔
+#  spring.thymeleaf.excluded-view-names=
+#  #要运用于模板之上的模板模式。另见StandardTemplate-ModeHandlers(默认值：HTML5)
+#  spring.thymeleaf.mode=HTML5
+#  #在构建URL时添加到视图名称前的前缀（默认值：classpath:/templates/）
+#  spring.thymeleaf.prefix=classpath:/templates/
+#  #在构建URL时添加到视图名称后的后缀（默认值：.html）
+#  spring.thymeleaf.suffix=.html
+#  #Thymeleaf 模板解析器在解析器链中的顺序，默认情况下，它排第一位，顺序从1开始，只有在定义了额外的 TemplateResolver Bean 时才需要设置这个属性。
+#  spring.thymeleaf.template-resolver-order=
+#  #可解析的视图名称列表，用逗号分隔
+
+#  spring.thymeleaf.view-names=

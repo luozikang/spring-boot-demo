@@ -1,0 +1,8 @@
+spring:
+    profiles:
+        active: annomulit
+mybatis:
+    config-location: classpath:mybatis/mybatis-config.xml
+    type-aliases-package: org.lzk.mybatis.model
+
+

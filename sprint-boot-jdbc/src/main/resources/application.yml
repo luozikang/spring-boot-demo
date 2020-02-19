@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    # 使用datasourceproperties字段，通过builder方法将对应属性注入给hickercp
+#      url: jdbc:mysql://192.168.11.11:3306/test
+#      username: root
+#      password: root
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+
+      second:
+        # 调整成hickercp 数据源的jdbcurl字段，用于注入属性
+        jdbc-url: jdbc:mysql://192.168.11.11:3306/test2
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      primary:
+        # 调整成hickercp 数据源的jdbcurl字段，用于注入属性
+        jdbc-url: jdbc:mysql://192.168.11.11:3306/test
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  mybatis.type-aliases-package: org.lzk.
+
+  spring.datasource.url=jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+  spring.datasource.username=root
+  spring.datasource.password=root
+  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver

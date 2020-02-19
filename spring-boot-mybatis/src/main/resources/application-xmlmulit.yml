@@ -1,0 +1,11 @@
+datasource:
+  one:
+    jdbc-url: jdbc:mysql://192.168.11.11:3306/test3?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  two:
+    jdbc-url: jdbc:mysql://192.168.11.11:3306/test4?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
