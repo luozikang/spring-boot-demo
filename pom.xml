@@ -57,6 +57,7 @@
         <module>spring-boot-restful</module>
         <module>sprint-boot-jdbc</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-jpa</module>
     </modules>
     <packaging>pom</packaging>
 
