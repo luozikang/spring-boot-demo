@@ -49,8 +49,6 @@
     </dependencies>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-boot-web</artifactId>
-
-
     <build>
         <plugins>
             <plugin>
