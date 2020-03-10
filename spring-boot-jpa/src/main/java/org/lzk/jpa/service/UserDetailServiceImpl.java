@@ -2,7 +2,7 @@ package org.lzk.jpa.service;
 
 import com.mysql.cj.util.StringUtils;
 import org.lzk.jpa.common.UserDetailParam;
-import org.lzk.jpa.dao.UserDetailRepository;
+import org.lzk.jpa.dao.test.UserDetailRepository;
 import org.lzk.jpa.entity.UserDetail;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

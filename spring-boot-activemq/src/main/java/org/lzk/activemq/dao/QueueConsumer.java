@@ -1,0 +1,13 @@
+package org.lzk.activemq.dao;
+
+import org.springframework.jms.annotation.JmsListener;
+import org.springframework.stereotype.Component;
+
+@Component
+public class QueueConsumer {
+
+    @JmsListener(destination = "neo.queue",containerFactory = "queueListenerFactory")
+    public void receiveQueue(String text) {
+        System.out.println("Consumer queue msg : "+text);
+    }
+}

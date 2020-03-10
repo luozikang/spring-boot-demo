@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.lzk.jpa.common.UserDetailParam;
 import org.lzk.jpa.common.UserInfo;
-import org.lzk.jpa.dao.UserDetailRepository;
+import org.lzk.jpa.dao.test.UserDetailRepository;
 import org.lzk.jpa.entity.UserDetail;
 import org.lzk.jpa.service.UserDetailService;
 import org.springframework.boot.test.context.SpringBootTest;

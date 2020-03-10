@@ -1,0 +1,19 @@
+# 实体类包路径
+mybatis:
+  type-aliases-package: org.lzk.druid.entity
+
+spring:
+  datasource:
+    druid:
+      one:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://192.168.11.11:3306/test
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver
+      two:
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://192.168.11.11:3306/test2
+        username: root
+        password: root
+        driver-class-name: com.mysql.cj.jdbc.Driver

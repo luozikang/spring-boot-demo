@@ -2,9 +2,10 @@ package org.lzk.jpa;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.lzk.jpa.dao.UserRepository;
+import org.lzk.jpa.dao.test.UserRepository;
 import org.lzk.jpa.entity.User;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -47,8 +48,11 @@ public class UserRepositoryTests {
         int page=1,size=2;
         Sort sort = new Sort(Sort.Direction.DESC, "id");
         Pageable pageable = PageRequest.of(page, size, sort);
-        userRepository.findAll(pageable);
-        userRepository.findByNickName("aa", pageable);
+        Page<User> all = userRepository.findAll(pageable);
+        System.out.println(all);
+
+        Page<User> aa = userRepository.findByNickName("aa", pageable);
+        System.out.println(aa);
     }
 
 }

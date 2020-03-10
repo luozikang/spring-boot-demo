@@ -1,4 +1,4 @@
-package org.lzk.jpa.dao;
+package org.lzk.jpa.dao.test;
 
 import org.lzk.jpa.entity.User;
 import org.springframework.data.domain.Page;
